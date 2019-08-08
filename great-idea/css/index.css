@@ -152,7 +152,6 @@ h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
-  /* border: 1px solid lightgrey; */
   line-height: 20px;
   width: 60%;
   margin: auto;
@@ -367,25 +366,34 @@ ul li {
 
 .all-prod {
   width: 100%;
+  text-align: justify;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.products {
+.product-img {
   width: 100%;
+}
+
+.prod-row {
+  width: 100%;
+  display: flex;
+}
+
+.individual-prod {
+  margin: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
+  transition: 0.3s;
+  border: 2px solid white;
 }
 
-.top-half div,
-.top-half img {
-  width: 45%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.bottom-half div,
-.bottom-half img {
-  width: 45%;
-  display: flex;
-  flex-wrap: wrap;
+.individual-prod:hover {
+  opacity: 0.3;
+  cursor: help;
+  border: 2px solid lightgrey;
+  border-radius: 5%;
 }
